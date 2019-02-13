@@ -1,0 +1,20 @@
+{
+  "pages":[
+    
+    "pages/scan/scan",
+    "pages/index/index",
+    
+    "pages/logs/logs",
+    "pages/shopcar/shopcar",
+    "pages/order/order",
+    "pages/entry/entry",
+    "pages/bindPhone/bindPhone",
+    "pages/address/address"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0D82E5",
+    "navigationBarTitleText": "扫码购",
+    "navigationBarTextStyle":"white"
+  }
+}

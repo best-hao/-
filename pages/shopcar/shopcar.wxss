@@ -1,0 +1,120 @@
+
+.group-list{
+  border-bottom: 1px solid #D3D3D3;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+}
+.list{
+  border-top: 1px solid #D3D3D3;
+  height: 180rpx;
+  padding: 30rpx 0;
+  position: relative;
+}
+.del-icon{
+  position: absolute;
+  right: 10rpx;
+  top: 10rpx;
+  width: 65rpx;
+  height: 65rpx;
+}
+.num-con{
+  position: absolute;
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  bottom: 10rpx;
+  right: 10rpx;
+  display: flex;
+}
+.num-item{
+  flex: 1;
+  text-align: center;
+  font-size: 28rpx;
+}
+.shop-name{
+  font-size: 28rpx;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.list-pic{
+  height: 150rpx;
+  width: 150rpx;
+  overflow: hidden;
+}
+.list-pic image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.list-cont{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: #929292;
+  font-size: 26rpx;
+  margin-left: 30rpx;
+  line-height: 1.7em;
+  min-width: 0;
+}
+.pro-name{
+  color: #353535;
+}
+.pro-func{
+  font-size: 24rpx;
+}
+.no-title{
+  height: 300rpx;
+  text-align: center;
+  line-height: 300rpx;
+  font-size: 26rpx;
+}
+.to-scan{
+  width: 200rpx;
+  font-size: 28rpx;
+}
+.total{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  position: fixed;
+  bottom:0;
+  left: 0;
+  border-top: 1px solid #D3D3D3;
+  display: flex;
+  font-size: 26rpx;
+}
+.total-btn{
+  width: 200rpx;
+  text-align: center;
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  color: #fff;
+  background: linear-gradient(to bottom right, #46ccee , #0D82E5);
+}
+.price-view{
+  text-align: right;
+  flex: 1;
+  position: relative;
+}
+.scan-info{
+  position: absolute;
+  left: 40rpx;
+  bottom: 15rpx;
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #46ccee , #0D82E5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  line-height: 1.5em;
+  font-size: 24rpx;
+}
+.scan-icon{
+  display: block;
+  width: 70rpx;
+  height: 70rpx;
+}

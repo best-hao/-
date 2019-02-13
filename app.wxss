@@ -1,0 +1,65 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.row{
+  display:flex;
+  align-items:center;
+}
+.price{
+  color:#ff4f4f;
+  font-size:30rpx;
+  font-weight:bold;
+}
+.line-clum{
+  margin: 0 10rpx;
+}
+/*超出1行显示省略号*/
+.text-over{
+ display:block;
+ white-space:nowrap;
+ overflow:hidden;
+ text-overflow:ellipsis;
+}
+/*超出2行显示省略号*/
+.text-over-two{
+ text-overflow:ellipsis;
+ overflow:hidden;
+ display:-webkit-box;
+ -webkit-line-clamp:2; 
+ -webkit-box-orient:vertical;
+}
+/*checkbox 整体大小  */
+/*checkbox {
+  width: 80rpx;
+  height: 80rpx;
+}*/
+checkbox{
+  margin-right: 10rpx;
+}
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input {
+  width: 28rpx;
+  height: 28rpx;
+}
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #fff;
+}
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #FF525C;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}

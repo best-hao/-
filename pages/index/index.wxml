@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view class="userinfo-avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="userinfo-nickname">
+      <open-data type="userNickName"></open-data>
+      <text>{{meto}}</text>
+    </view>
+    
+    <!-- 需要使用 button 来授权登录 -->
+    <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class="login-btn">立即体验</button>
+    <view wx:else>请升级微信版本</view>
+  </view>
+</view>
+

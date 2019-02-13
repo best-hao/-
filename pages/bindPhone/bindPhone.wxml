@@ -1,0 +1,12 @@
+<view class="bind-phone">
+  <view>
+      <input class="phone-number" type="number" focus placeholder='请输入手机号码' bindblur='getPhone'/>      
+  </view>
+  <view class="code">
+      <input class="code-number" placeholder='请输入验证码' type="number" bindblur='getCode'></input>
+      <button bindtap='setCode' class="get-code">获取验证码</button>
+  </view> 
+</view>
+<view>
+    <button class='suer-btn' bindtap='bind'>确认</button>
+</view>

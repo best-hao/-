@@ -1,0 +1,6 @@
+<template name='search'>
+  <view class='search-view'>
+    <input class='search-input' placeholder='{{search.placeholder}}' focus='{{search.isfocus}}' bindblur="serchCode"></input>  
+    <button class='search-btn' bindtap='addCar'>{{search.btnText}}</button>
+  </view>
+</template>

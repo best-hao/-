@@ -1,0 +1,141 @@
+/* pages/scan/scan.wxss */
+page{
+  height: 100%;
+  font-size: 32rpx;
+}
+.userinfo{
+  display: flex;
+  height: 220rpx;
+  width: 100%;
+  flex-direction: row;
+  background: linear-gradient(#0D82E5, #46ccee);
+  align-items: center;
+  color: #fff;
+  padding: 0 25rpx;
+}
+.scan-container{
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scaninfo{
+  width: 270rpx;
+  height: 270rpx;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #46ccee , #0D82E5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin: 0 20rpx 0 26rpx;
+}
+.user-head{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.user-address{
+  flex: 1;
+}
+.avatar {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 0 20rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.phone-number{
+  font-size: 30rpx;
+}
+.address-icon{
+  width: 50rpx;
+  height: 50rpx;
+}
+.scan-icon{
+  height: 110rpx;
+  width: 110rpx;
+  margin-bottom: 15rpx;
+}
+.manual-button{
+  margin: 0;
+  padding: 0;
+  margin-top: 20rpx;
+  width: 400rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+}
+.scan-view{
+  flex: 3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-view{
+  flex: 2;
+}
+.shopcar-order{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+.shopcar-order image{
+  width: 90rpx;
+  height: 90rpx;
+  margin-bottom: 5rpx;
+}
+.fixed-view{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background: rgba(0, 0, 0, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pover{
+  width: 500rpx;
+  height: 300rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  margin-bottom: 20%;
+  overflow: hidden;
+  position: relative;
+}
+.get-phone{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 85rpx;
+  line-height: 85rpx;
+  font-size: 30rpx;
+}
+.title{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 85rpx;
+  line-height: 85rpx;
+  text-align: center;
+  font-size: 32rpx;
+}
+.content{
+  position: absolute;
+  top:95rpx;
+  left: 0;
+  width: 100%;
+  height: 120rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #666;
+}

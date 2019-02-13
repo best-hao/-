@@ -1,0 +1,2 @@
+<import src='../../template/search-template/search.wxml'/>
+<template is='search' data='{{search}}'></template>

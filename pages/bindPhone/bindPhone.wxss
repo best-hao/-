@@ -1,0 +1,36 @@
+page{
+  height: 100%;
+  background: #efefef;
+}
+.bind-phone{
+  padding: 25rpx 40rpx;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+}
+.phone-number{
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 26rpx;
+  border-bottom: 1px solid #cfcfcf;
+}
+.code{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.code-number{
+  flex: 1;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 26rpx;
+}
+.get-code{
+  margin: 0;
+  padding: 0 1em;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.suer-btn{
+  margin-top: 80rpx;
+}

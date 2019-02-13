@@ -1,0 +1,56 @@
+<view wx:if="{{noShop}}">
+  <view class='no-title'>{{noTitle}}</view>
+  <view>
+    <button bindtap='toScan' class='to-scan'>去扫码</button>
+  </view>
+</view>
+<view class="shop-car" wx:else>
+    <view class="group-list">
+      <view class="shop-name">
+        <label class="checkbox">
+          <checkbox checked="{{selectAllStatus}}" bindtap='selectAll'/>
+        </label>
+        {{shopName}}
+      </view>
+      <view class="shop-list">
+        <block wx:for="{{carts}}" wx:key="index" wx:for-index="myIndex">
+          <view class="list row">
+            <image src="{{delIcon}}" class="del-icon" bindtap='deleteList' data-index="{{myIndex}}"></image> 
+            <label class="checkbox" bindtap='selectList' data-index="{{myIndex}}">
+              <checkbox checked="{{item.selected}}"/>
+            </label>
+            <view class="list-pic">
+              <image src="{{item.IMG_PATH}}"></image>
+            </view>
+            <view class="list-cont">
+              <view class="pro-name text-over">{{item}}</view>
+              <view class="pro-func text-over">
+                {{item.COMMODITY_COLOR}}<text class="line-clum">|</text>{{item.COMMODITY_SIZE}}
+              </view>
+              <view class="row row-between">
+                <view class="price">￥{{item.SALEPRICE}}</view>
+                <view class="xl"></view>
+              </view>
+            </view>
+
+            <view class="num-con" wx:if="{{item.selected}}">
+              <view class="num-item" bindtap='minusCount' data-index="{{myIndex}}">-</view>
+              <view class="num-item">{{item.EXCHANGE_QUANLITY}}</view>
+              <view class="num-item" bindtap='addCount' data-index="{{myIndex}}">+</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+</view>
+
+<view class="total row">
+  <view class="price-view">
+    合计：￥{{totalPrice}}
+    <view class="scan-info" bindtap='toScan'>
+      <image class='scan-icon' src="{{scanIcon}}"></image>
+      <text>继续扫</text>
+    </view>
+  </view>
+  <view class="total-btn">去结算</view>
+</view>
